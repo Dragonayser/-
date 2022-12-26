@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вход</title>
+	<link rel="stylesheet" type="text/css" href="styleSignIn.css">
+</head>
+<body>
+	<p class="topImg">
+		<img src="../images/Самолётик.svg">
+		<img src="../images/название.svg">
+	</p>	
+	<form>
+		<h1>Вход</h1>
+
+		<div class="loginAndPassword">
+			<div class="login">
+				<input type="text" class="loginTextColor" name="" placeholder="Введите логин" onfocus="if (placeholder == 'Введите логин') {placeholder = ''}" onblur="if (placeholder == '') {placeholder = 'Введите логин'}">
+			</div>
+			<div class="password">
+				<input type="password" class="loginTextColor" name="" placeholder="Введите пароль" onfocus="if (placeholder == 'Введите пароль') {placeholder = ''}" onblur="if (placeholder == '') {placeholder = 'Введите пароль'}">
+			</div>
+		</div>
+		
+		<p class = "saveBox"><label><input type="checkbox" name="checkbox" value="saveMe">Запомнить меня</label></p>
+
+		<a href="../main/main.html" class="sign-in"><p class="signInText">Войти</p></a>
+	</form>
+
+	<div class="action">
+		<a class="support" href="#">Техподдержка</a>
+		<a href="../SignUp/signUp1.html"><button class="sign-up">Регистрация</button></a>
+	</div>
+</body>
+</html>

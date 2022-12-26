@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JavaScript SimpleAdaptiveSlider - Слайдер для сайта на чистом JavaScript [Example 01]</title>
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="cssSlider/cssSlider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* стили для элемента body */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+
+    /* дополнительные стили для этого примера */
+    .itcss__items {
+      counter-reset: slide;
+    }
+
+    .itcss__item {
+      counter-increment: slide;
+    }
+
+    .itcss__item>div::before {
+      content: counter(slide);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+    }
+  </style>
+  <!-- Подключаем JS слайдера -->
+  <script defer src="jsSlider/jsSlider.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // активация слайдера
+      new ItcSimpleSlider('.itcss', {
+        loop: true,
+        autoplay: true,
+        swipe: true
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header_body">
+                <div class="header_burger">
+                    <span></span>
+                </div>
+                <nav class="header_menu">
+                    <ul class="header_list">
+                        <li><a href="personalArea.html" class="header_link"><img src="../images/free-icon-profile-1250689 1.svg" class="burgerPA">Личный кабинет</a></li>
+                        <li><a href="main.html" class="header_link" ><img src="../images/инфа.svg" class="burgerInfo">Информация о компании</a></li>
+                        <li><a href="map.html" class="header_link"><img src="../images/free-icon-map-point-5817084 1.svg" class="burgerOffice">Карта офиса</a></li>
+                        <li><a href="../game/game.html" class="header_link"><img src="../images/опрос-игра.svg" class="burgerGame">Опрос-игра</a></li>
+                        <li><a href="chat.html" class="header_link"><img src="../images/free-icon-email-2549872 1.svg" class="burgerChat">Чат с наставником</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="compInfo">
+              <!-- Разметка слайдера -->
+              <div class="itcss">
+                <div class="itcss__wrapper">
+                  <div class="itcss__items">
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/вход.jpg" height="250px"> </div>
+                      <figcaption style=" background: #fff;" align = center>Вход</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/ресепшн5.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Ресепшен</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/ресепшн6.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Ресепшен</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/бух2.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Бухгалтерия</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/бух3.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Бухгалтерия</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/малПереговорка.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Малая Переговорная</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/БолПереговорка.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Большая Переговорная</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/кабГенДиректора.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Кабинет Ген.Директора</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/проектировщики-строители8.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Проектировщики-строители</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/проектировщики-строители9.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Проектировщики-строители</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/GR.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>GR</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/управление персоналом1.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Управление Персоналом</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/управление персоналом2.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Управление Персоналом</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/управление персоналом3.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Управление Персоналом</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/юристы.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Юристы</figcaption>
+                    </div>
+                    <div class="itcss__item">
+                      <div style="height: 250px;" align = center><img src="mapImg/кухня.jpg" height="250px"></div>
+                      <figcaption style=" background: #fff;" align = center>Кухня</figcaption>
+                    </div>
+                  </div>
+                </div>
+                <button class="itcss__btn itcss__btn_prev" role="button" data-slide="prev"></button>
+                <button class="itcss__btn itcss__btn_next" role="button" data-slide="next"></button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div align = center><img src="mapImg/map.png" height="150px"></div>
+</div>  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="js/menu.js"></script>
+</body>
+
+</html>

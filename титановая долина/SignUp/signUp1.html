@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация 1</title>
+	<link rel="stylesheet" type="text/css" href="styleSignUp.css">
+</head>
+<body>
+<form>
+	<div class="top">
+		<a href="../SignIn/signIn.html" id="left"><img src="../images/стрелочка влево.svg"></a>
+		<img src="../images/Самолётик2.svg">
+		<a href="signUp2.html" id="right"><img src="../images/стрелочка вправо.svg"></a>
+	</div>
+	
+	<p class="reg">Регистрация</p>
+
+	<div class="line"><img src="../images/Line 1.svg"></div>
+	<div class="sliders">
+		<img src="../images/Rectangle 3.svg" id="slide1">
+		<img src="../images/Rectangle 4.svg" id="slide2">
+		<img src="../images/Rectangle 4.svg" id="slide3">
+		<img src="../images/Rectangle 4.svg">
+	</div>
+	<figcaption id="fig1">1 шаг</figcaption>
+	<div class="fields">
+		<div class="surname">
+			<p>Фамилия <img src="../images/кз.svg"></p>
+
+			<input type="text" name="" placeholder="Введите имя" onfocus="if (placeholder == 'Введите имя') {placeholder = ''}" onblur="if (placeholder == '') {placeholder = 'Введите имя'}">
+		</div>
+		<div class="name">
+			<p>Имя <img src="../images/кз.svg"></p>
+			<input type="text" name="" placeholder="Введите фамилию" onfocus="if (placeholder == 'Введите фамилию') {placeholder = ''}" onblur="if (placeholder == '') {placeholder = 'Введите фамилию'}">
+		</div>
+		<div class="patronymic">
+			<p>Отчество</p>
+			<input type="text" name="" placeholder="Введите отчество" onfocus="if (placeholder == 'Введите отчество') {placeholder = ''}" onblur="if (placeholder == '') {placeholder = 'Введите отчество'}">
+		</div>
+		<div class="date">
+			<p>Дата рождения <img src="../images/кз.svg"></p>
+			<input type="text" name="" placeholder="Введите дату рождения" onfocus="if (placeholder == 'Введите дату рождения') {placeholder = ''}" onblur="if (placeholder == '') {placeholder = 'Введите дату рождения'}">
+		</div>
+	</div>
+	<p class="important"><img src="../images/кз.svg"> - обязательно к заполнению</p>
+</form>
+</body>
+</html>

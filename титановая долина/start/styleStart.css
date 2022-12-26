@@ -1,0 +1,18 @@
+div{
+    text-align: center;
+}
+
+#mascott, #rectangle, #name{
+    position: relative;
+}
+
+#rectangle{
+    top: -116px;
+}
+#name{
+    top: -170px;
+}
+
+body{
+    margin: auto;
+}

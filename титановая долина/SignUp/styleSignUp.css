@@ -1,0 +1,205 @@
+/* верхняя часть*/
+.top{
+    text-align: center;
+}
+
+#left{
+    margin-right: 20%;
+}
+
+#right{
+    margin-left: 20%;
+}
+.lastTop{
+    position: relative;
+}
+
+.lastLeft{
+    text-align: center;
+    margin-bottom: -64px;
+    margin-right: 240px;
+}
+.lastPlane{
+    text-align: center;
+    margin-top: 27px;
+}
+/*регистрация*/
+@font-face{
+	font-family: 'Inter-LightItalic';
+	src: url(../fonts/inter/Inter-LightItalic.otf);
+	font-weight: 300;
+	font-style: italic;
+}
+
+.reg{
+    font-size: 32px;
+	font-family: 'Inter-LightItalic';
+	color: rgba(218, 125, 50, 1);
+	text-align: center;
+	text-shadow: 0px 4px 7px rgb(150, 150, 150);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*переходы*/
+figcaption{
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Inter-LightItalic';
+	color: rgba(51, 51, 102, 1);
+}
+#fig1{
+    margin-top: -10px;
+    margin-right: 210px;
+
+}
+
+#fig2{
+    margin-top: -13px;
+    margin-right: 70px;
+
+}
+
+#fig3{
+    margin-top: -13px;
+    margin-left: 70px;
+}
+
+#fig4{
+    margin-top: -13px;
+    margin-left: 210px;
+}
+
+
+.line{
+    text-align: center;
+}
+.sliders{
+    text-align: center;
+    position: relative;
+    top: -15px;
+}
+
+#slide1,#slide2,#slide3{
+    margin-right: 46px;
+}
+
+/*поля*/
+
+.fields{
+    text-align: center;
+    font-family: 'Inter-LightItalic';
+    color: rgba(0, 0, 0, 1);
+}
+
+.fields input{
+    width: 234px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;   
+    background-color: #F8F8F8;
+    box-shadow: 0px 4px 5px rgb(150, 150, 150);
+    font-size: 16px;
+}
+
+.fields p{
+    margin-bottom: 5px;
+}
+
+/* важно */
+.important{
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* камера */
+#camIcon,#camEllipse{
+    text-align: center;
+    position: relative;
+}
+
+#camEllipse{
+    margin-top: 20px;
+}
+
+#camIcon{
+    top: -120px;
+}
+
+#addImg{
+    font-size: 16px;
+    font-family: 'Inter-LightItalic';
+	color: rgba(51, 51, 102, 1);
+    margin-top: -65px;
+    text-align: center;
+}
+
+/*загрузка файлов*/
+.example-2 .btn-tertiary{
+    font-family: 'Inter-LightItalic';
+    color:#555;
+    padding:0;
+    line-height:40px;
+    width:150px;
+    margin:auto;
+    display:block;
+    border:2px solid #555;
+    border-radius: 5px;
+}
+    
+.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{
+    color:#888;
+    border-color:#888;
+}
+    
+.example-2 .input-file{
+    width:.1px;
+    height:.1px;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    z-index:-1;
+}
+    
+.example-2 .input-file + .js-labelFile{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    padding:0 10px;
+    cursor:pointer;
+}
+.example-2 .input-file + .js-labelFile .icon:before{content:"\f093"}
+.example-2 .input-file + .js-labelFile.has-file
+.icon:before{
+    content:'f00c';
+    color:#5AAC7B;
+}
+
+/*Завершение регистрации*/
+
+.endReg{	
+    margin-top: 20px;
+    text-align: center;
+}
+.lastBtn{
+	width: 234px;
+	height: 46px;
+	border-radius: 40px;
+	border: none;
+	background: linear-gradient(to bottom, #F5D542, #DA7D32);
+    margin: auto;
+	font-size: 17px;
+	box-shadow: 0px 6px 5px rgb(150, 150, 150);
+	text-align: center;
+	box-sizing: border-box;
+	display: inline-block;
+	text-decoration: none;
+}
+.endText{
+	font-family: 'Inter-LightItalic';
+	color: rgba(51, 51, 102, 1);
+	margin-top: 10px;
+}
